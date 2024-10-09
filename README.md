@@ -10,4 +10,6 @@ The [original exercise](https://github.com/Simulation-Software-Engineering/autom
 
 
 
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/gingyy/Owner avatar
+rse102-github-actions-exercise
+/actions/workflows/main.yml/badge.svg)
