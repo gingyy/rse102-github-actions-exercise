@@ -41,5 +41,5 @@ jobs:
       - name: "Upload artifact"
         uses: actions/upload-artifact@v4
         with:
-          path: .coverage
+          name: .coverage
           retention-days: 1
