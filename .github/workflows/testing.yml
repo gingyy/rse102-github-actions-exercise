@@ -25,6 +25,7 @@ jobs:
         run: pip install pytest
       - name: "install coverage"
         run: pip install coverage
+        
       - name: "pytest_test"
         run: pytest
       - name: "coverage_test"
