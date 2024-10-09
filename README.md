@@ -1,3 +1,5 @@
+![example workflow](https://github.com/gingyy/rse102-github-actions-exercise/actions/workflows/testing.yml/badge.svg)
+
 # Automation Exercise
 
 This repository contains some example Python code for the RSE 102 workshop. It is used for setting up automation workflows (CI) in GitHub. For more information please check out the [exercise sheet](https://github.com/RSE-102/Lecture-Material/blob/main/06_automation/automation_exercise.md). The code is a slightly modified version of the [code used in the Python testing exercise](https://github.com/RSE-102/diffusion2D-testing-exercise).
@@ -10,4 +12,3 @@ The [original exercise](https://github.com/Simulation-Software-Engineering/autom
 
 
 
-![example workflow](https://github.com/gingyy/rse102-github-actions-exercise/actions/workflows/testing.yml/badge.svg)
