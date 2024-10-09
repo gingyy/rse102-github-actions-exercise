@@ -3,7 +3,7 @@ name: Testing workflow
 on: [push]
 
 jobs:
-  test:
+  style:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -14,3 +14,14 @@ jobs:
         run: pip install black
       - name: "style_checker"
         run: black --check .
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10.12'
+      - name: "pytest_test"
+        run: pytest
+      - name: "coverage_test"
+        run: coverage run -m pytest
