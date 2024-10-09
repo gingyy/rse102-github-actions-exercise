@@ -35,9 +35,6 @@ jobs:
       - name: "coverage_test"
         run: coverage run -m pytest
 
-  # artifact:
-  #   runs-on: ubuntu-latest
-  #   steps:
       - name: "Upload artifact"
         uses: actions/upload-artifact@v4
         with:
@@ -46,13 +43,31 @@ jobs:
           retention-days: 1
           include-hidden-files: true
 
-  # coverage:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: "Upload artifact"
-  #       uses: actions/upload-artifact@v4
-  #       with:
-  #         name: .coverage
-  #         path: .coverage
-  #         retention-days: 1
-  #         include-hidden-files: true
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.10.12'
+      - name: "install pytest"
+        run: pip install pytest
+      - name: "install coverage"
+        run: pip install coverage
+      - name: "install numpy"
+        run: pip install numpy
+      - name: "install matplotlib"
+        run: pip install matplotlib
+
+      - name: "coverage_report"
+        run: coverage report
+      - name: "coverage_xml"
+        run: coverage xml
+
+      - name: "Upload artifact"
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage.xml
+          path: coverage.xml
+          retention-days: 14
+          include-hidden-files: true
