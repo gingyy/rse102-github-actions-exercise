@@ -26,7 +26,7 @@ jobs:
       - name: "install coverage"
         run: pip install coverage
       - name: "install numpy"
-      run: pip install numpy
+        run: pip install numpy
 
       - name: "pytest_test"
         run: pytest
