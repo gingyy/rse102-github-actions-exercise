@@ -10,4 +10,4 @@ The [original exercise](https://github.com/Simulation-Software-Engineering/autom
 
 
 
-![example workflow](https://github.com/gingyy/rse102-github-actions-exercise/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/gingyy/rse102-github-actions-exercise/actions/workflows/testing.yml/badge.svg)
