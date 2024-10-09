@@ -8,3 +8,6 @@ The code used in this exercise is based on [Chapter 7 of the book "Learning Scie
 
 The [original exercise](https://github.com/Simulation-Software-Engineering/automation-exercise) was created as part of the [SSE lecture](https://simulation-software-engineering.github.io).
 
+
+
+![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
