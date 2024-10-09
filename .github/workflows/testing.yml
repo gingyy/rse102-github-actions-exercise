@@ -35,9 +35,9 @@ jobs:
       - name: "coverage_test"
         run: coverage run -m pytest
 
-  artifact:
-    runs-on: ubuntu-latest
-    steps:
+  # artifact:
+  #   runs-on: ubuntu-latest
+  #   steps:
       - name: "Upload artifact"
         uses: actions/upload-artifact@v4
         with:
@@ -45,3 +45,14 @@ jobs:
           path: .coverage
           retention-days: 1
           include-hidden-files: true
+
+  # coverage:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: "Upload artifact"
+  #       uses: actions/upload-artifact@v4
+  #       with:
+  #         name: .coverage
+  #         path: .coverage
+  #         retention-days: 1
+  #         include-hidden-files: true
